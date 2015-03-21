@@ -1,5 +1,5 @@
 def discount(age):
-    if age <=21 or age >=65:
+    if age <=22 or age >=65:
         print('Because you are ' + str(age) + ', you can get money off your travel.')
         if age <=21:
             print('You qualify for a youth discount.')

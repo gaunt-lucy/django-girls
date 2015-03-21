@@ -3,7 +3,19 @@
       <title>Lucy's Blog</title>
     </head>
     <body>
-      <p>Hi there!</p>
-      <p>It works!</p>
-    </blog>
+      <div>
+    <h1><a href="/">Lucy's Django Girls Blog</a></h1>
+</div>
+
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaks }}</p>
+        <p>Author: {{ post.author}}</p>
+
+    </div>
+{% endfor %}
+
+    </body>
 </html>
